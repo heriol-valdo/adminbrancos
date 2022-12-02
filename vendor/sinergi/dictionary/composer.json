@@ -1,0 +1,30 @@
+{
+    "name": "sinergi/dictionary",
+    "type": "library",
+    "description": "PHP Dictionary library",
+    "keywords": ["sinergi", "dictionary", "text"],
+    "homepage": "https://github.com/sinergi/dictionary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Bull",
+            "email": "me@gabrielbull.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sinergi\\Dictionary\\": "src/Dictionary"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sinergi\\Dictionary\\Tests\\": ["tests/Dictionary/Tests", "tests/Dictionary/Tests/_includes"]
+        }
+    }
+}
